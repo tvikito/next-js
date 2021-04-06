@@ -9,8 +9,6 @@ export default function Home() {
 
   React.useEffect(() => {
     let myInterval = setInterval(() => {
-      console.log('setting time')
-
       setActualTime(new Date())
     }, 1000)
 

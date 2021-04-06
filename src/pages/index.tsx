@@ -5,16 +5,7 @@ import Image from 'next/image'
 export default function Home() {
   const [actualTime, setActualTime] = React.useState(() => new Date())
 
-  // const actualTime = new Date()
   const endTime = new Date(2021, 5, 30, 23, 59, 59)
-
-  // const remainingTime = new Date(actualTime - endTime)
-
-  // console.log('>>> time', endTime.getMonth() - actualTime.getMonth())
-
-  const date = new Date(0)
-
-  // console.log('>>> date', date)
 
   React.useEffect(() => {
     let myInterval = setInterval(() => {
@@ -33,10 +24,6 @@ export default function Home() {
     minutes: ('0' + (endTime.getMinutes() - actualTime.getMinutes())).slice(-2),
     seconds: ('0' + (endTime.getSeconds() - actualTime.getSeconds())).slice(-2),
   }
-
-  // console.log('>>> time', months, days, hours, minutes, seconds)
-  console.log('>>> month', endTime.getMonth(), actualTime.getMonth())
-  console.log('>>> day', endTime.getDate(), actualTime.getDate())
 
   const getDateElement = (value: number | string, type: string) => (
     <div className="text-center m-10">

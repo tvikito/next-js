@@ -1,8 +1,5 @@
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
-import '../styles/normalize.scss'
-import '../styles/main.scss'
-import '../styles/flaticon.scss'
-import '../styles/styles.scss'
+import '../styles/global.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />

@@ -25,7 +25,7 @@ export default function Home() {
 
   const getDateElement = (value: number | string, type: string) => (
     <div className="text-center m-10">
-      <div className="text-8xl my-3 font-bold">{value}</div>
+      <div className="text-5xl my-3 font-bold md:text-8xl">{value}</div>
       <div>{type}</div>
     </div>
   )
@@ -45,7 +45,7 @@ export default function Home() {
       />
 
       <div
-        className="flex w-full m-auto text-white place-content-center align-middle"
+        className=" w-full m-auto text-white place-content-center align-middle sm:flex"
         style={{
           zIndex: 1,
         }}

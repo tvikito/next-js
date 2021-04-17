@@ -24,28 +24,31 @@ export default function Home() {
   }
 
   const getDateElement = (value: number | string, type: string) => (
-    <div className="text-center m-10">
-      <div className="text-5xl my-3 font-bold md:text-8xl">{value}</div>
+    <div className="text-center m-2 sm:m-5 md:m-10">
+      <div className="text-5xl md:text-8xl my-3 font-bold ">{value}</div>
       <div>{type}</div>
     </div>
   )
 
   return (
-    <div className="h-screen flex col-auto">
+    <div
+      className="h-screen min-h-full flex col-auto bg-center bg-cover"
+      style={{ backgroundImage: `url("/bg.jpeg")` }}
+    >
       <Head>
-        <title>Hej bruhuu</title>
+        <title>Freedom is awaiting us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Image
+      {/* <Image
         src="/bg.jpeg"
         alt="Picture of the author"
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-      />
+      /> */}
 
       <div
-        className=" w-full m-auto text-white place-content-center align-middle sm:flex"
+        className="w-full m-auto text-white place-content-center align-middle sm:flex"
         style={{
           zIndex: 1,
         }}

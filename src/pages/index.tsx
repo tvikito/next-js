@@ -48,16 +48,28 @@ export default function Home() {
       /> */}
 
       <div
-        className="w-full m-auto text-white place-content-center align-middle sm:flex"
+        className="w-full m-auto flex items-center flex-col"
         style={{
           zIndex: 1,
         }}
       >
-        {getDateElement(months, 'Months')}
-        {getDateElement(days, 'Days')}
-        {getDateElement(hours, 'Hours')}
-        {getDateElement(minutes, 'Minutes')}
-        {getDateElement(seconds, 'Seconds')}
+        <iframe
+          className="w-[250px] h-[250px]"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RoVj6zBAkAM"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+        <div className="text-white place-content-center align-middle sm:flex">
+          {getDateElement(months, 'Months')}
+          {getDateElement(days, 'Days')}
+          {getDateElement(hours, 'Hours')}
+          {getDateElement(minutes, 'Minutes')}
+          {getDateElement(seconds, 'Seconds')}
+        </div>
       </div>
     </div>
   )
